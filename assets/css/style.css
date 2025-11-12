@@ -29,7 +29,7 @@ h6 {
 }
 
 .sec-padding {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .btn-solid {
@@ -74,8 +74,13 @@ h6 {
   margin-bottom: -4.5rem;
   font-size: 60px;
   font-weight: 900;
-  -webkit-text-stroke: 1px #bda4c769;
+  -webkit-text-stroke: 1px #93880f69;
   -webkit-text-fill-color: transparent;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0rem 1rem 2.5rem #1111550d;
+          box-shadow: 0rem 1rem 2.5rem #1111550d;
 }
 
 .social-media-part i {
@@ -138,11 +143,6 @@ h6 {
   font-weight: 600;
 }
 
-.hero-banner .banner-images {
-  max-width: 500px;
-  text-align: center;
-}
-
 .hero-banner .wcmp-typewrite-header {
   color: #947a27;
   text-decoration: none;
@@ -151,67 +151,6 @@ h6 {
 
 .hero-banner .wcmp-typewrite-header:hover {
   text-decoration: none;
-}
-
-.mywork-card-wrap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(21.25rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
-  grid-gap: 2rem;
-  padding: 3.5rem 0 0;
-}
-
-.mywork-card-wrap .work-image {
-  border-radius: .25rem;
-  overflow: hidden;
-}
-
-.mywork-card-wrap h6.work-title {
-  font-weight: 600;
-  color: #7B1113;
-  padding: 1rem 0 0;
-  text-align: center;
-}
-
-.skill-card-wrap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(21.25rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
-  grid-gap: 2rem;
-  padding: 3.5rem 0 0;
-  text-align: center;
-}
-
-.skill-card-wrap .skill-card-item {
-  background: #efe8f1;
-  padding: 2rem 2rem 4rem;
-  border-radius: 0.25rem;
-}
-
-.skill-card-wrap .skill-card-item .card-icon {
-  font-size: 3.5rem;
-  padding: 0 0 .5rem;
-  color: #7B1113;
-}
-
-.skill-card-wrap .skill-card-item h6.card-title {
-  font-size: 1.125rem;
-  font-weight: 700;
-  position: relative;
-}
-
-.skill-card-wrap .skill-card-item h6.card-title::after {
-  position: absolute;
-  background: #7B1113;
-  bottom: -20px;
-  left: 50%;
-  content: "";
-  height: 0.13rem;
-  width: 44px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .portfolio-footer {

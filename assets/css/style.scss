@@ -33,12 +33,13 @@ h6 {
 .container{overflow: hidden;}
 
 .sec-padding {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 .img-shadow {
     // box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 5%);
 }
+
 
 .btn-solid {
     font-family: 'Montserrat';
@@ -81,13 +82,13 @@ h6 {
         margin-bottom: -4.5rem;
         font-size: 60px;
         font-weight: 900;
-        -webkit-text-stroke: 1px #bda4c769;
+        -webkit-text-stroke: 1px #93880f69;
         -webkit-text-fill-color: transparent;
     }
 }
 
 .box-shadow {
-    // box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 3%);
+    box-shadow: 0rem 1rem 2.5rem #1111550d;
 }
 
 .social-media-part i {
@@ -150,81 +151,16 @@ h6 {
 
 // banner
 .hero-banner {
-    .banner-images {
-        max-width: 500px;
-        text-align: center;
-    }
-
     .wcmp-typewrite-header {
         color: #947a27;
         text-decoration: none;
         cursor: unset;
     }
-
     .wcmp-typewrite-header:hover {
-        // color: #ad8eb9;
         text-decoration: none;
     }
 }
 
-// my work
-.mywork-card-wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
-    grid-gap: 2rem;
-    padding: 3.5rem 0 0;
-
-    .work-image {
-        border-radius: .25rem;
-        overflow: hidden;
-    }
-
-    h6.work-title {
-        font-weight: 600;
-        color: $color-primary;
-        padding: 1rem 0 0;
-        text-align: center;
-    }
-}
-
-// skill
-.skill-card-wrap {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
-    grid-gap: 2rem;
-    padding: 3.5rem 0 0;
-    text-align: center;
-
-    .skill-card-item {
-        background: #efe8f1;
-        padding: 2rem 2rem 4rem;
-        border-radius: 0.25rem;
-
-        .card-icon {
-            font-size: 3.5rem;
-            padding: 0 0 .5rem;
-            color: $color-primary;
-        }
-
-        h6.card-title {
-            font-size: 1.125rem;
-            font-weight: 700;
-            position: relative;
-
-            &::after {
-                position: absolute;
-                background: $color-primary;
-                bottom: -20px;
-                left: 50%;
-                content: "";
-                height: 0.13rem;
-                width: 44px;
-                transform: translateX(-50%);
-            }
-        }
-    }
-
-}
 
 // footer
 
