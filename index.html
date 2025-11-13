@@ -1,145 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinesh Chandra Rawat — Official Landing</title>
+  <meta name="description" content="Official one-page landing for Dinesh Chandra Rawat — environmentalist, author, founder of Green Mall and Prakriti Bandhu; creator of the Glories of India series." />
+  <meta property="og:title" content="Dinesh Chandra Rawat — Official Landing" />
+  <meta property="og:description" content="Environmental leader • Author • Founder of Green Mall • Glories of India" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1f2937" />
+  <style>
+    :root{
+      --bg: #0b1020;           /* deep indigo */
+      --card: #11172e;         /* slightly lighter */
+      --text: #e7eefc;
+      --muted: #93a4c5;
+      --accent: #39b87f;       /* emerald green */
+      --gold: #d4af37;         /* soft gold */
+      --ring: rgba(57,184,127,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 75% -10%, #1a2244 0%, var(--bg) 60%);
+      color:var(--text);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:min(900px,100%);
+      background:linear-gradient(180deg, rgba(255,255,255,.02), transparent 30%), var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.45);
+      padding: clamp(20px, 3.5vw, 40px);
+    }
+    .row{display:grid; grid-template-columns: 120px 1fr; gap:24px; align-items:center}
+    .badge{
+      width:110px; height:110px; border-radius:50%;
+      display:grid; place-items:center;
+      background: radial-gradient(80px 80px at 30% 30%, #2b3562, #192040);
+      color:var(--text); font-weight:800; letter-spacing:.06em; font-size:28px;
+      border:1px solid rgba(255,255,255,.12);
+      position:relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4), inset 0 0 0 3px rgba(255,255,255,.04);
+    }
+      .badge img {
+    border-radius: 100px;
+}
+    .badge:after{content:""; position:absolute; inset:-6px; border-radius:inherit; box-shadow:0 0 0 6px var(--ring);}
+    h1{margin:0; font-size:clamp(26px, 3.2vw, 36px); line-height:1.15}
+    .tag{margin-top:6px; color:var(--muted); font-size:clamp(14px, 1.8vw, 16px)}
+    .cta-area{margin-top:16px; display:flex; flex-wrap:wrap; gap:12px}
+    .cta{ display:inline-flex; align-items:center; gap:10px; text-decoration:none; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.12); color:var(--text); background:rgba(57,184,127,.12);}
+    .cta:hover{ border-color:rgba(57,184,127,.45); box-shadow:0 8px 24px rgba(57,184,127,.18);}
+    .cta .dot{width:9px;height:9px;border-radius:50%;background:var(--accent); box-shadow:0 0 12px var(--accent)}
 
-    <!-- lib -->
+    .links{margin-top:26px; display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px}
+    .link{
+      display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text);
+      padding:14px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(255,255,255,.03), transparent 40%);
+    }
+    .link:hover{border-color:rgba(255,255,255,.22); transform:translateY(-1px); transition:all .2s ease}
+    .icon{width:20px;height:20px;opacity:.9}
+    .gold{color:var(--gold)}
+    .foot{
+      margin-top:20px; display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:space-between; color:var(--muted); font-size:14px
+    }
+    .social{display:flex; gap:10px}
+    .sbtn{display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:11px; border:1px solid rgba(255,255,255,.12); text-decoration:none;}
+    .sbtn:hover{border-color:rgba(255,255,255,.28)}
 
-    <link rel="stylesheet" href="assets/lib/bootstrap-5-0-2.min.css">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/lib/bootstrap.bundle.min.js"></script>
-
-    <!-- for fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- aos css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/b-solid.svg">
-    <title>Dinesh Chandra Rawat</title>
+    @media (max-width:640px){
+      .row{grid-template-columns:1fr; text-align:center}
+      .badge{justify-self:center}
+      .links{grid-template-columns:1fr}
+      .foot{justify-content:center}
+    }
+  </style>
 </head>
-
 <body>
- 
-
- 
-    <header class="portflio-navber box-shadow sticky-top">
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand" href="">
-                  Dinesh Rawat
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Facebok</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="#">WhatsApp</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#my-work">E-Mail</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">TwitterX</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill-section">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-    <section class="hero-banner sec-padding" id="">
-        <div class="container">
-            <div class="row align-items-center  gap-5">
-                
-                <div class="col-md-8 text-center m-auto" data-aos="fade-left">
-                     <h1 class="fw-bolder"> Dinesh Chandra Rawat is</h1>
-                    <h1 class="m-0"><span class="fw-bolder"></span> <a href=""
-                            class="wcmp-typewrite-header fw-bolder" data-period="2000"
-                            data-type='[ "A Researcher", "An Author", "An Environmentalist", "A Truth Seeker" , "A Best Book Sellor" ]'></a></h1>
-                    <h1 class="fw-bolder"> Based in India</h1>
-                    <p class="mb-4 py-4"> I’m a passionate web developer dedicated to creating user-friendly, innovative
-                        websites. I
-                        strive to combine functionality with aesthetics, ensuring an enjoyable experience for all users.
-                    </p>
-                    <div class="button-area d-flex gap-3 flex-wrap justify-content-center">
-                        <a href="" class="btn btn-solid">Give a Mail</a>
-                    </div>
-                    <div class="social-media-part pt-5">
-                        <a href="#"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/7278006663"><i class="fa-brands fa-whatsapp"></i></a>
-
-                    </div>
-                </div>
-            </div>
+  <main class="card" role="main" aria-label="Business card for Dinesh Chandra Rawat">
+    <section class="row">
+      <div class="badge" aria-hidden="true"><img src="assets/images/dcr.png" alt=""></div>
+      <header>
+        <h1><span class="gold">Dinesh Chandra Rawat</span></h1>
+        <div class="tag">Environmental Leader • Author • Founder: Green Mall & Prakriti Bandhu • Creator: Glories of India</div>
+        <div class="cta-area">
+          <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSflVs5jvRGJkyj_66ep-upGxGXKZSS6PdNzaDLUfGVkdBJbwA/viewform?usp=header" target="_blank" rel="noopener">
+            <span class="dot" aria-hidden="true"></span>
+            <strong>Join the Mission</strong>
+          </a>
         </div>
+      </header>
     </section>
 
-  
-    <div class="scroll-top" id="topscroll">
-        <i class="fa-brands fa-space-awesome"></i>
-    </div>
-    <footer class="portfolio-footer fixed-bottom">
-        <div class="container pt-4 pb-2">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="social-media-part">
-                        <a href="https://www.facebook.com/biplab.samanta.982?mibextid=ZbWKwL"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/biplab-samanta-3bb1242b9/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/7439156201"><i class="fa-brands fa-whatsapp"></i></a>
+    <nav class="links" aria-label="Primary links">
+      <a class="link" href="https://greenmall.in" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8 2 6 6 6 6s-2 4-2 6a8 8 0 1 0 16 0c0-2-2-6-2-6s-2-4-6-4Zm0 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"/></svg>
+        <span>Green Mall — Indoor & Outdoor Plants</span>
+      </a>
+      <a class="link" href="https://prakritibandhu.org" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 12a9 9 0 1 1 18 0v6a3 3 0 0 1-3 3h-3v-7h-6v7H6a3 3 0 0 1-3-3v-6Z"/></svg>
+        <span>Prakriti Bandhu Trust</span>
+      </a>
+      <a class="link" href="https://gloriesofindia.info" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5h16v3H4zM4 10h16v3H4zM4 15h16v3H4z"/></svg>
+        <span>Glories of India — Books & Media</span>
+      </a>
+      <a class="link" href="https://dineshrawat.live" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 1 0 18A9 9 0 0 1 12 3Zm1 5h-2v8h2V8Zm-1-3a1.5 1.5 0 1 0 .001 3.001A1.5 1.5 0 0 0 12 5Z"/></svg>
+        <span>Author Site — DineshRawat.live</span>
+      </a>
+      <a class="link" href="https://lies.co.in" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16v16H4zM7 7h10v2H7zM7 11h10v2H7zM7 15h10v2H7z"/></svg>
+        <span>Research & Essays — Lies.co.in</span>
+      </a>
+      <a class="link" href="https://prakritimandir.lies.co.in" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>
+        <span>Ma Prakriti Mandir</span>
+      </a>
+    </nav>
 
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a class="footer-mail">Email: <span>dineshrawat@live.in</span></a>
-                </div>
-            </div>
-
-            </div>
+    <footer class="foot">
+      <div>© <span id="year"></span> Dinesh Chandra Rawat</div>
+      <div class="social" aria-label="Social links">
+        <a class="sbtn" href="https://www.youtube.com/@Glories-of-India" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6A3 3 0 0 0 .5 7.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-4.8ZM9.8 15.3V8.7L15.5 12Z"/></svg>
+        </a>
+        <a class="sbtn" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg>
+        </a>
+        <a class="sbtn" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3 0 3.3 0 4.5.1 1.2 0 2 .3 2.5.5.6.3 1 .6 1.5 1.1.5.5.8.9 1.1 1.5.2.5.4 1.3.5 2.5.1 1.2.1 1.5.1 4.5s0 3.3-.1 4.5c0 1.2-.3 2-.5 2.5-.3.6-.6 1-1.1 1.5-.5.5-.9.8-1.5 1.1-.5.2-1.3.4-2.5.5-1.2.1-1.5.1-4.5.1s-3.3 0-4.5-.1c-1.2 0-2-.3-2.5-.5-.6-.3-1-.6-1.5-1.1-.5-.5-.8-.9-1.1-1.5-.2-.5-.4-1.3-.5-2.5C2.2 15.3 2.2 15 2.2 12s0-3.3.1-4.5c0-1.2.3-2 .5-2.5.3-.6.6-1 1.1-1.5.5-.5.9-.8 1.5-1.1.5-.2 1.3-.4 2.5-.5C8.7 2.2 9 2.2 12 2.2m0-2.2C9 0 8.7 0 7.5.1 6.3.1 5.3.4 4.5.8c-.9.4-1.6.9-2.3 1.6C1.5 3.1 1 3.8.8 4.7c-.4.8-.6 1.8-.7 3C0 8.9 0 9.3 0 12c0 2.7 0 3.1.1 4.3.1 1.2.3 2.2.7 3 .2.9.7 1.6 1.4 2.3.7.7 1.4 1.2 2.3 1.6.8.4 1.8.6 3 .7C8.9 24 9.3 24 12 24s3.1 0 4.3-.1c1.2-.1 2.2-.3 3-.7.9-.2 1.6-.7 2.3-1.4.7-.7 1.2-1.4 1.6-2.3.4-.8.6-1.8.7-3C24 15.1 24 14.7 24 12s0-3.1-.1-4.3c-.1-1.2-.3-2.2-.7-3-.2-.9-.7-1.6-1.4-2.3C20.1 1.7 19.4 1.2 18.5.8c-.8-.4-1.8-.7-3-.7C15.1 0 14.7 0 12 0Z"/><circle cx="12" cy="12" r="3.2"/></svg>
+        </a>
+        <a class="sbtn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.31V9.5h3.41v1.49h.05c.48-.91 1.65-1.86 3.4-1.86 3.64 0 4.31 2.4 4.31 5.51v5.81ZM5.34 8.01a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9.5h3.57v10.95Z"/></svg>
+        </a>
+        <a class="sbtn" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.508 7.436L22.5 22H15.8l-4.929-6.437L4.2 22H2l6.994-7.984L1.5 2h6.9l4.47 5.94L18.244 2Zm-1.196 18h1.873L7.035 4h-1.9l11.913 16Z"/></svg>
+        </a>
+      </div>
     </footer>
- 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 600) {
-                    $('#topscroll').addClass('visible');
-                } else {
-                    $('#topscroll').removeClass('visible');
-                }
-            });
-            // variables 
-            var toTop = $('.scroll-top');
-            // logic
-            toTop.on('click', function () {
-                $('html, body').animate({
-                    scrollTop: $('html, body').offset().top,
-                });
-            });
-        });
-
-    </script>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>

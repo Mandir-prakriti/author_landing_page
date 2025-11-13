@@ -30,8 +30,12 @@ h6 {
     color: $color-primary;
 }
 
-.container{overflow: hidden;}
-
+.container{
+    overflow: hidden;
+}
+li.nav-item {
+    padding: 0 16px;
+}
 .sec-padding {
     padding: 3rem 0;
 }
